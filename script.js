@@ -48,13 +48,16 @@ const runAI = async () => {
   scrollToBottom();
 
   try {
-    const response = await fetch("http://localhost:8080/ask-wac-ai", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ question }),
-    });
+    const response = await fetch(
+      "https://wac-ai-backend.onrender.com/ask-wac-ai",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ question }),
+      }
+    );
 
     removeLoadingElement();
 
