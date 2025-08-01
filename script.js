@@ -79,8 +79,8 @@ const runAI = async () => {
 
     const data = await response.json();
 
-    promptInput.style.pointerEvents = "all";
-    submitButton.style.pointerEvents = "all";
+    promptInput.style.pointerEvents = "auto";
+    submitButton.style.pointerEvents = "auto";
 
     containerChatElement.innerHTML += `
       <div class="container-ia-message">
