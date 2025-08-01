@@ -92,6 +92,8 @@ const runAI = async () => {
 
     console.log(data);
   } catch (error) {
+    promptInput.style.pointerEvents = "auto";
+    submitButton.style.pointerEvents = "auto";
     addMessageErrorGenerate();
     console.error(error);
   }
