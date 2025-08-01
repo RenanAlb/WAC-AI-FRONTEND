@@ -13,7 +13,7 @@ const addMessageErrorGenerate = () => {
     <div class="container-error-message-ia">
       <div class="error-message-ia"><p>Erro ao gerar resposta!<br><br> 
       O que fazer? <br>
-      - Envie outra mensagem ou recarregue o site <br>
+      - Envie outra mensagem no chat<br>
       - Recarregue o site (seu histórico de conversar irá desaparecer)</p></div>
     </div>
   `;
