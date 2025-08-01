@@ -11,10 +11,16 @@ const addMessageErrorGenerate = () => {
   removeLoadingElement();
   containerChatElement.innerHTML += `
     <div class="container-error-message-ia">
-      <div class="error-message-ia"><p>Erro ao gerar resposta!<br><br> 
-      O que fazer? <br>
-      - Envie outra mensagem no chat<br>
-      - Recarregue o site (seu histórico de conversar irá desaparecer)</p></div>
+      <div class="error-message-ia"><p><strong>Erro ao gerar resposta!</strong><br><br> 
+      <strong>Possíveis erros:</strong><br>
+      - Você chegou ao limite de requisições da IA.<br>
+      - A resposta foi mal gerada ou com formatação inválida.<br>
+      - Houve muitas requisições internas ao mesmo tempo.<br><br>
+      <strong>O que fazer?</strong> <br>
+      - Envie outra mensagem.<br>
+      - Recarregue o site (seu histórico de conversar irá desaparecer).<br>
+      - Tente acessar amanhã o site.
+      </div>
     </div>
   `;
 };
@@ -50,6 +56,9 @@ const runAI = async () => {
 
   scrollToBottom();
 
+  promptInput.style.pointerEvents = "none";
+  submitButton.style.pointerEvents = "none";
+
   try {
     const response = await fetch(
       "https://wac-ai-backend.onrender.com/ask-wac-ai",
@@ -69,6 +78,9 @@ const runAI = async () => {
     }
 
     const data = await response.json();
+
+    promptInput.style.pointerEvents = "all";
+    submitButton.style.pointerEvents = "all";
 
     containerChatElement.innerHTML += `
       <div class="container-ia-message">
