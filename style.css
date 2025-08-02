@@ -78,7 +78,7 @@ main {
   justify-content: end;
   display: flex;
   align-items: center;
-  margin: 20px 0;
+  margin: 40px 0;
 }
 .user-message {
   background-color: var(--cor2);
@@ -90,7 +90,7 @@ main {
   font-weight: 300;
   font-size: 0.86em;
   white-space: pre-line;
-  line-height: 1.6em;
+  line-height: 1.7em;
 }
 
 .container-ia-message {
@@ -98,20 +98,20 @@ main {
   justify-content: start;
   display: flex;
   align-items: center;
-  margin: 20px 0;
+  margin: 40px 0;
 }
 .ia-message p {
   color: white;
   font-weight: 300;
   font-size: 0.86em;
   white-space: pre-line;
-  line-height: 1.6em;
+  line-height: 1.7em;
 }
 
 .loading-message-ia {
   display: flex;
   align-items: center;
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 .container-error-message-ia {
@@ -127,7 +127,7 @@ main {
   font-weight: 300;
   font-size: 0.86em;
   transition: 0.2s;
-  line-height: 1.5em;
+  line-height: 1.55em;
 }
 
 #container-prompt {
