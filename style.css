@@ -38,6 +38,11 @@ header p {
   color: var(--cor3);
 }
 
+header span {
+  zoom: 70%;
+  transform: translateY(6px);
+}
+
 header a {
   color: var(--cor4);
   text-decoration: none;
