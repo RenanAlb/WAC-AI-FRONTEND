@@ -15,12 +15,12 @@ const addMessageErrorGenerate = () => {
       <strong>Possíveis erros:</strong><br>
       - Você chegou ao limite de requisições da IA.<br>
       - A resposta foi mal gerada ou com formatação inválida.<br>
-      - Conexão de internet perdida<br>
+      - Conexão de internet perdida.<br>
       - Houve muitas requisições internas ao mesmo tempo.<br><br>
       <strong>O que fazer?</strong> <br>
       - Envie outra mensagem.<br>
       - Recarregue o site (seu histórico de conversar irá desaparecer).<br>
-      - Verifique sua conexão com a internet<br>
+      - Verifique sua conexão com a internet.<br>
       - Tente acessar amanhã o site.
       </div>
     </div>
