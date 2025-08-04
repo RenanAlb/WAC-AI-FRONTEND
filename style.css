@@ -99,6 +99,7 @@ main {
   display: flex;
   align-items: center;
   margin: 40px 0;
+  color: white;
 }
 .ia-message p {
   color: white;
